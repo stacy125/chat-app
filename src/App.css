@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  width: auto;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: var(--main-bg-color-dark);
+}
+
+:root {
+  --main-bg-color: rgb(82, 82, 82);
+  --main-bg-color-hover: rgb(68, 80, 216);
+  --main-bg-color-dark: rgb(49, 49, 49);
+}
+
+/* -------------------Animation ---------------------------  */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* ---------------------Header ---------------------------- */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--main-bg-color-hover);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+  padding: 6px 0 0 10px;
+  background-color: var(--main-bg-color-hover);
+}
+
+.welcome {
+  text-align: center;
+}
+
+/* -----------------------Body ----------------------------------  */
+.app_main_sign {
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+  animation: fadeIn 1s ease-out;
+}
+
+.sign {
+  height: 300px;
+  width: 300px;
+  box-shadow: 0 0 5px var(--main-bg-color-hover);
+  background-color: var(--main-bg-color-hover);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign_p {
+  background-color: var(--main-bg-color-hover);
+}
+
+.displayName {
+  font-weight: 700;
+}
+
+/* ----------------------------Messages --------------------------  */
+.container_messages {
+  margin: 10px 0;
+  margin-left: 12px;
+  max-height: 600px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.messages_p {
+  margin-top: 5px;
+}
+
+.messages_divs {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.messages_divs2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  box-shadow: 0 0 1px var(--main-bg-color-hover);
+  border-radius: 3px;
+  padding: 10px;
+  max-width: 765px;
+}
+
+.messages_divs--delete_edit {
+  display: flex;
+}
+.confirm_edit {
+  margin-bottom: 10px;
+}
+
+.input_userupload {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.container_channel_form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+.channel_cancel_active {
+  display: flex;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-bg-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-bg-color-hover);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-bg-color-dark);
+}
+
+/* ---------------------random ------------------------  */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  transition: all 0.2s;
+  padding: 0px 4px 0px 0;
+}
+
+.avatar:hover {
+  transform: rotateY(90deg);
+}
+
+button {
+  background-color: var(--main-bg-color);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: var(--main-bg-color-hover);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input {
+  padding: 13px 32px;
+  outline: 0;
+  border: 1px solid var(--main-bg-color-hover);
+}
+
+.delete,
+.edit {
+  background-color: var(--main-bg-color);
+  display: inline-block;
+  padding: 0px 4px 0px 4px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 3px;
+  height: 24px;
+  margin: 0 3px;
+}
+
+.delete {
+  margin-right: 5px;
+}
+
+.delete:hover,
+.edit:hover {
+  background-color: var(--main-bg-color-hover);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.btn-signIn {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  margin: 5px;
+  min-width: fit-content;
+  font-size: 10px;
+  color: var(--main-bg-color-hover);
+}
+
+p {
+  margin: 2px;
+  min-width: fit-content;
+  font-weight: 100;
+}
+
+.time {
+  font-size: 10px;
+}
+
+.btn__confirm__edit {
+  padding: 0;
+}
